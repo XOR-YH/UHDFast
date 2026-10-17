@@ -1,0 +1,70 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+issueTrackerURL="https://github.com/XOR-YH/UHDFast/issues"
+displayURL="https://github.com/XOR-YH/UHDFast"
+logoFile="assets/uhdfast/icon.png"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="${mod_authors}"
+description='''${mod_description}
+Features:
+- Intel Xe/UHD Graphics detection and deep optimization
+- GPU Compute Shader acceleration for chunk mesh building
+- Extended render distance up to 96 chunks
+- Adaptive performance profiler with auto-quality adjustment
+- VSync and FPS cap optimization
+- Particle and entity optimization
+- Xe-specific rendering pipeline enhancements'''
+credits="Intel Xe Architecture Research"
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="${neo_version_range}"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.${mod_id}]]
+    modId="optifine"
+    type="optional"
+    versionRange="*"
+    ordering="AFTER"
+    side="CLIENT"
+
+[[dependencies.${mod_id}]]
+    modId="embeddium"
+    type="optional"
+    versionRange="*"
+    ordering="AFTER"
+    side="CLIENT"
+
+[[dependencies.${mod_id}]]
+    modId="oculus"
+    type="optional"
+    versionRange="*"
+    ordering="AFTER"
+    side="CLIENT"
+
+[[dependencies.${mod_id}]]
+    modId="iris"
+    type="optional"
+    ordering="AFTER"
+    side="CLIENT"
+
+[[mixins]]
+config="uhdfast.mixins.json"
+
+[[accessTransformers]]
+file="META-INF/accesstransformer.cfg"

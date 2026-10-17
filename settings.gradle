@@ -1,0 +1,12 @@
+pluginManagement {
+    repositories {
+        maven {
+            url 'https://mirrors.cloud.tencent.com/repository/gradle-plugins/'
+        }
+        gradlePluginPortal()
+    }
+}
+
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
+}

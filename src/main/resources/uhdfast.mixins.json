@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.xor.uhdfast.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": [
+    "LevelRendererMixin",
+    "LevelRendererShaderMixin",
+    "EntityRenderDispatcherMixin",
+    "ChunkMapMixin",
+    "ChunkMapGPUMixin",
+    "GameRendererMixin",
+    "GameRendererShaderMixin",
+    "ShaderInstanceMixin",
+    "TextureManagerMixin",
+    "EntityMixin",
+    "LivingEntityMixin",
+    "LivingEntityRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
