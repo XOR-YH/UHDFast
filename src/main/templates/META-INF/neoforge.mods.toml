@@ -65,6 +65,3 @@ credits="Intel Xe Architecture Research"
 
 [[mixins]]
 config="uhdfast.mixins.json"
-
-[[accessTransformers]]
-file="META-INF/accesstransformer.cfg"
